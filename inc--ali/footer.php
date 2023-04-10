@@ -94,11 +94,11 @@
     </div>
 </footer>
 
-<script src="../js--ali/bootstrap.min.js"></script>
-<script src="../js--ali/jquery.min.js"></script>
-<script src="../js--ali/jquery.slimNav_sk78.min.js"></script>
-<script src="../js--ali/owl.carousel.js"></script>
-<script src="../js--ali/script.js"></script>
+<script src="js--ali/bootstrap.min.js"></script>
+<script src="js--ali/jquery.min.js"></script>
+<script src="js--ali/jquery.slimNav_sk78.min.js"></script>
+<script src="js--ali/owl.carousel.js"></script>
+<script src="js--ali/script.js"></script>
 <script>
 $('.car-slide').owlCarousel({
     loop: true,
@@ -116,6 +116,29 @@ $('.car-slide').owlCarousel({
         }
     }
 })
+</script>
+<!------------------------------------------------------------------------------------------------
+ JS by Ali on 10.04.2023
+--------------------------------------------------------------------------------------------------->
+<script>
+// faq
+$(".frequently-section .acc_trigger:first").addClass("closed").next().show();
+$(".faq_item > .acc_trigger").bind("click", function () {
+  if ($(this).hasClass("closed")) {
+    $(".faq_item").children(".acc_trigger").removeClass("closed");
+    $(".faq_item").children(".acc_container").slideUp(300);
+    $(this).removeClass("closed");
+    $(this).next(".acc_container").slideUp(300);
+    return false;
+  } else {
+    $(".faq_item").children(".acc_trigger").removeClass("closed");
+    $(".faq_item").children(".acc_container").slideUp(300);
+    $(this).addClass("closed");
+    $(this).next(".acc_container").slideDown(300);
+    return false;
+  }
+});
+
 </script>
 </body>
 

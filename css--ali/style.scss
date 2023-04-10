@@ -190,7 +190,239 @@ section.car-slider {
   }
 }
 
+//! Css __ kaustav !//
+section.tab-section {
+  text-align: center;
+  padding: 6.875rem 0;
+  .btn_line {
+    display: inline-block;
+    border-bottom: 0.3125rem solid var(--primary-clr);
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+    padding: 0.3125rem 0;
+    i {
+      margin-left: 5px;
+    }
+  }
+  .heading-secondary {
+    margin-bottom: 3.125rem;
+  }
+  nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5.4375rem;
+    .nav-tabs {
+      background: #ffffff;
+      border-radius: 5.875rem;
+      overflow: hidden;
+      border: none;
+      box-shadow: 0px 29px 110px #55555540;
+      padding: 0.8125rem 0.625rem;
+      button {
+        font-family: "THICCCBOI";
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
+        font-weight: 600;
+        border: none;
+        padding: 1.375rem 2.0625rem;
+        background-color: #fff;
+        color: var(--black-clr);
+        border-radius: 5.875rem;
+        max-width: 14.5625rem;
+        &.active {
+          background-color: #cfad65;
+          color: var(--default-white);
+        }
+      }
+    }
+  }
+  .lchbx {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4.5rem;
+    img {
+      width: 100%;
+      height: 34.875rem;
+      object-fit: cover;
+    }
+    .txt {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-bottom: 3.625rem;
+      h3 {
+        font-weight: 600;
+        font-size: $fs-30;
+        line-height: 2rem;
+        color: #fff;
+        margin-bottom: 0.75rem;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: $fs-20;
+        line-height: 1.3125rem;
+        color: #ffffff;
+        margin-bottom: 2rem;
+        strong {
+          font-weight: 700;
+          color: var(--primary-clr);
+        }
+      }
+      .br-50 {
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        border: 0.0938rem solid #ffffff;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        border-radius: 50%;
+
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+  .tab-content {
+    max-width: 94.6875rem;
+    margin: 0 auto;
+  }
+}
+
+//-----------------------------------------------------------------------------------------------//
 // css by Ali on 10.04.2023
+//-----------------------------------------------------------------------------------------------//
+
+section.faq-section {
+  padding: 6.125rem 0 7.875rem;
+  h2 {
+    margin-bottom: 4.125rem;
+    font-size: $fs-55;
+    line-height: 4.75rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .faq_box {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .faq_item {
+      text-align: left;
+      position: relative;
+      width: 100%;
+      margin-bottom: 0;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 0;
+
+      .faq_hd {
+        margin-bottom: 0.5625rem;
+        cursor: pointer;
+        position: relative;
+        border-radius: 0.1875rem;
+        overflow: hidden;
+        border-bottom: 0.125rem solid var(--primary-clr);
+        h3 {
+          font-weight: 700;
+          font-size: $fs-26;
+          line-height: 1.875rem;
+          color: var(--faq-text);
+          position: relative;
+          padding: 1.875rem 7.1875rem 1.875rem 2.5rem;
+          font-family: "Nunito Sans", sans-serif;
+          margin: 0;
+        }
+        &::before {
+          font: var(--fa-font-solid);
+          content: "\f067";
+          position: absolute;
+          display: inline-block;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          right: 2.5rem;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+          z-index: 1;
+          font-size: 1.875rem;
+          width: 1.875rem;
+          height: 1.875rem;
+          color: var(--primary-clr);
+        }
+        &.closed::before {
+          content: "\f068";
+        }
+      }
+      .faq_cont {
+        display: none;
+        padding: 1.25rem 2.5rem 0rem 2.5rem;
+        p {
+          padding-bottom: 0.5rem;
+          font-size: 1.125rem;
+          color: #14212a;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+section.instagram-follow {
+  padding: 3.75rem 0 8.125rem;
+  background: var(--white-clr);
+  text-align: center;
+  h2 {
+    margin-bottom: 4.125rem;
+    font-size: $fs-55;
+    line-height: 4.75rem;
+    font-weight: 700;
+  }
+  .instagram-item {
+    width: 100%;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    position: relative;
+    a {
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      i {
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    }
+  }
+}
+
 footer {
   .main-footer {
     background-size: cover !important;
