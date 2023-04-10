@@ -1,5 +1,6 @@
 /** @format */
 @import url(../fonts/fonts.css);
+
 // variables
 :root {
   --primary-clr: #cfad65;
@@ -15,6 +16,7 @@
   --default-white: #ffffff;
   --faq-text: #182a40;
 }
+
 $fs-50: 3.125rem;
 $fs-55: 3.4375rem;
 $fs-85: 5.3125rem;
@@ -29,8 +31,6 @@ $fs-26: 1.625rem;
 $fs-20: 1.25rem;
 $fs-24: 1.5rem;
 $fs-22: 1.375rem;
-
-
 
 // Globals styles
 body {
@@ -47,23 +47,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'THICCCBOI';
+  font-family: "THICCCBOI";
   font-weight: 600;
 }
-
-
 
 ul {
   padding: 0;
   margin: 0;
+
   li {
     list-style: none;
   }
 }
+
 a {
   display: inline-block;
   text-decoration: none;
   color: #000;
+
   &:hover {
     color: #000;
   }
@@ -77,8 +78,9 @@ iframe {
   vertical-align: middle;
   max-width: 100%;
 }
+
 .container {
-  width: min(102.5rem, 95%);
+  max-width: 102.5rem;
 }
 
 .heading-primary {
@@ -87,16 +89,18 @@ iframe {
   line-height: 106.3%;
   color: var(--default-white);
 }
+
 .heading-secondary-font {
-  font-family: 'Hellix';
+  font-family: "Hellix";
 }
 
-.text-primary {
+.txt-primary {
   font-weight: 500;
   font-size: $fs-24;
   line-height: 35px;
   color: var(--default-white);
 }
+
 .default-btn {
   border-radius: 6px;
   font-weight: 600;
@@ -104,32 +108,39 @@ iframe {
   line-height: 35px;
   padding: 18px 60px;
 }
+
 .card-btn {
   font-weight: 600;
   font-size: $fs-20;
   line-height: 35px;
   padding: 12px 35px;
 }
+
 .card-btn-primary {
   color: var(--default-white);
   background-color: var(--primary-clr);
 }
+
 .card-btn-secondary {
   color: var(--default-white);
   background-color: var(--head-clr);
 }
+
 .card-btn-tertiary {
   color: var(--default-white);
   background: var(--primary-gradient);
 }
+
 .primary-btn {
   background: var(--primary-clr);
   color: var(--default-white);
 }
+
 .seconday-btn {
   color: var(--head-clr);
   background: var(--default-white);
 }
+
 .head-sub {
   font-weight: 600;
   font-size: $fs-22;
@@ -138,30 +149,35 @@ iframe {
   text-edge: cap;
   color: var(--primary-clr);
 }
+
 .heading-secondary {
   font-weight: 600;
   font-size: $fs-50;
   line-height: 106.3%;
   color: var(--head-clr);
 }
+
 .heading-tertiary {
   font-weight: 600;
   font-size: $fs-55;
   line-height: 139%;
   color: var(--head-clr);
 }
+
 .para {
   font-weight: 500;
   font-size: $fs-18;
   line-height: 35px;
   color: var(--text-clr);
 }
+
 .card-head {
   font-weight: 600;
   font-size: $fs-36;
   line-height: 106.3%;
   color: var(--head-clr);
 }
+
 .card-text {
   font-weight: 500;
   font-size: $fs-16;
@@ -171,5 +187,174 @@ iframe {
 
 section.car-slider {
   .car-slide {
+  }
+}
+
+// css by Ali on 10.04.2023
+footer {
+  .main-footer {
+    background-size: cover !important;
+    padding: 5.625rem 0 3.125rem;
+
+    .ft-item-all {
+      margin: 0 0 5rem;
+
+      h2 {
+        font-size: $fs-40;
+        line-height: 2.875rem;
+        color: var(--primary-clr);
+        margin-bottom: 1rem;
+        font-family: "THICCCBOI";
+        font-weight: 700;
+      }
+      p {
+        color: var(--secondary-clr);
+        font-size: $fs-18;
+        line-height: 2.1875rem;
+        font-weight: 500;
+        font-family: "THICCCBOI";
+      }
+      ul {
+        margin: 0;
+        padding: 0px;
+        li {
+          font-size: $fs-18;
+          color: var(--secondary-clr);
+          font-weight: 500;
+          margin-bottom: 2.125rem;
+          font-family: "THICCCBOI";
+          a {
+            color: var(--secondary-clr);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: var(--primary-clr);
+            }
+          }
+        }
+      }
+      &.contact-ft {
+        ul {
+          padding: 0 0 0 3.5rem;
+          li {
+            position: relative;
+            margin-bottom: 1.6875rem;
+            h6 {
+              margin-bottom: 0.375rem;
+              font-weight: 700;
+            }
+            p {
+              padding: 0;
+              margin: 0;
+              line-height: 2.1875rem;
+              &:last-child {
+                margin: 0;
+                padding: 0;
+              }
+              a {
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  color: var(--primary-clr);
+                }
+              }
+            }
+            &::before {
+              content: " ";
+              position: absolute;
+              left: -3.5rem;
+              width: 2.125rem;
+              height: 2.125rem;
+            }
+            &:nth-child(1)::before {
+              background: url(../img--ali/phone-icon.png) no-repeat;
+            }
+            &:nth-child(2)::before {
+              background: url(../img--ali/email-icon.png) no-repeat;
+            }
+            &:nth-child(3)::before {
+              background: url(../img--ali/location-icon.png) no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .border-tp {
+      padding-top: 1.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.51);
+      .ft-logo {
+        max-width: 141px;
+        a {
+          display: block;
+        }
+      }
+
+      .pay-method {
+        max-width: 386px;
+        img {
+          width: 100%;
+        }
+      }
+
+      .ft-social {
+        display: flex;
+        justify-content: center;
+        ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          li {
+            a {
+              width: 70px;
+              height: 70px;
+              border: 0.1563rem solid #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.5rem;
+              color: #fff;
+              border-radius: 50%;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: var(--primary-clr);
+                border: 0.1563rem solid var(--primary-clr);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ft-copy {
+    padding: 2.25rem 0;
+    background: var(--black-clr);
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+    p {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .term-privacy {
+      ul {
+        display: flex;
+        gap: 0.9375rem;
+        li {
+          a {
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: var(--primary-clr);
+            }
+          }
+        }
+      }
+    }
   }
 }
